@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrap-card">
+            <div class="h1">
+                Password Generator
+            </div>
+            <div class="pass-copy">
+                <div id="password" class="h3">PASSWORD</div>
+                <div class="active" id="isCopied"></div>
+                <i id="copyPass" onclick="passCopiedf()" class="fa-solid fa-copy"></i>
+            </div>
+            <div class="body">
+                <div class="line1">
+                    <p>Password Length</p>
+                    <div id="rangevalue" class="length-display">10</div>
+                </div>
+                <input type="range" id="rangeSelect" min="1" max="20" />
+                <div class="checkbox">
+                    <input type="checkbox" id="includeUpper">
+                    <label for="includeUpper">Include uppercase Letters</label><br>
+                    <input type="checkbox" id="includeLower">
+                    <label for="includeLower">Include Lowercase Letters</label><br>
+                    <input type="checkbox" id="includeNumber">
+                    <label for="includeNumber">Include Numbers</label><br>
+                    <input type="checkbox" id="includeSymbol">
+                    <label for="includeSymbol">Include Symbols</label><br>
+                </div>
+                <div class="last-line">
+                    <p>Strength</p>
+                    <div id="strengthColor" class="strength-circle"></div>
+                </div>
+                <div class="generate">
+                    <a id="generatePassword" href="#">Generate Password</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./script.js"></script>
+</body>
+
+</html>
